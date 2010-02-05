@@ -1,6 +1,7 @@
 var Actions = {
   connectAddForm: function() {
     $("form.people").submit(function() {
+      alert($(this).action);
       $.ajax({
         type: 'post',
         dataType: 'json',
