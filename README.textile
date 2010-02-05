@@ -4,8 +4,8 @@ This is a demonstration of unobtrusive JavaScript using jQuery and Rails. The ex
 
 You will need Ruby on Rails version 2.3.5 to run this example. If you have Rails 2.3.5 you should just need to do the following:
 
-  git clone git://github.com/aeden/unobtrusive-jquery-example.git
-  cd unobtrusive-jquery-example
-  script/server
+    git clone git://github.com/aeden/unobtrusive-jquery-example.git
+    cd unobtrusive-jquery-example
+    script/server
   
-This will start the server on localhost port 3000. You can then visit http://localhost:3000/ to see it in action.
+This will start the server on localhost port 3000. You can then visit "http://localhost:3000/":http://localhost:3000/ to see it in action.
