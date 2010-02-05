@@ -1,0 +1,10 @@
+<ul class="people">
+	<li style="display:none"></li>
+<%	@people.each do |person| -%>
+	<li><span class="name"><%= person.name %></span> <%= link_to 'delete', delete_person_path(person), :class => 'delete' %></li>
+<%	end -%>
+</ul>
+
+<%	form_for :person, :url => people_url, :html => {:class => 'people'} do |f| -%>
+	<%= f.text_field :name %> <%= f.submit 'Add Person'%>
+<%	end -%>

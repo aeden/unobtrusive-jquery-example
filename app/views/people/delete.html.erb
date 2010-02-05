@@ -1,0 +1,7 @@
+<%	form_tag(person_url(@person)) do %>
+	<%= hidden_field_tag :_method, 'delete' %>
+	<p>Are you sure you want to delete <%= @person.name %>?</p>
+
+	<%= submit_tag 'Delete' %>
+	<%= link_to 'Cancel', people_url %>
+<%	end %>
