@@ -4,7 +4,7 @@ var Actions = {
       $.ajax({
         type: 'post',
         dataType: 'json',
-        url: $("form.people").action,
+        url: '/people',
         data: $(this).serialize(), 
         success: function(json) {
           $('ul.people').append('<li><span class="name">' + json.person.name + '</span> <a href="/people/' + json.person.id + '/delete" class="delete">delete</a></li>');
