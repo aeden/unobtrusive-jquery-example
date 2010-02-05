@@ -1,11 +1,10 @@
 var Actions = {
   connectAddForm: function() {
     $("form.people").submit(function() {
-      alert($(this).action);
       $.ajax({
         type: 'post',
         dataType: 'json',
-        url: '/people',
+        url: $("form.people").action,
         data: $(this).serialize(), 
         success: function(json) {
           $('ul.people').append('<li><span class="name">' + json.person.name + '</span> <a href="/people/' + json.person.id + '/delete" class="delete">delete</a></li>');
