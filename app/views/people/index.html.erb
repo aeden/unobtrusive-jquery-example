@@ -1,7 +1,7 @@
 <ul class="people">
 	<li style="display:none"></li>
 <%	@people.each do |person| -%>
-	<li><span class="name"><%= person.name %></span> <%= link_to 'delete', delete_person_path(person), :class => 'delete' %></li>
+	<li><span class="name"><%= h person.name %></span> <%= link_to 'delete', delete_person_path(person), :class => 'delete' %></li>
 <%	end -%>
 </ul>
 

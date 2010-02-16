@@ -7,7 +7,7 @@ var Actions = {
         url: '/people',
         data: $(this).serialize(), 
         success: function(json) {
-          $('ul.people').append('<li><span class="name">' + json.person.name + '</span> <a href="/people/' + json.person.id + '/delete" class="delete">delete</a></li>');
+          $('ul.people').append('<li><span class="name">' + html_sanitize(json.person.name) + '</span> <a href="/people/' + json.person.id + '/delete" class="delete">delete</a></li>');
           $('#person_name').val('');
         }
       });
